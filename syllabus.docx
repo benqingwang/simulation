@@ -1,0 +1,78 @@
+Course Syllabus | ISYE OMSA-6644 |Simulation and Modeling for Engineering and Science| Summer 2024
+https://gatech.instructure.com/courses/402090/assignments/syllabus
+  
+ --------------- 老师 --------------- 
+- Professor: Dr. David Goldsman
+- Head Teaching Assistant: Briana Cope
+
+Course Description
+- discrete-event dynamic systems
+-  simulation-based methods
+
+ --------------- 课程目标 --------------- 
+• develop simulation models and conduct simulation studies.
+• Become familiar with the organization of simulation languages. 使用Arena
+• Review statistical aspects including input analysis, random variate generation, output analysis, and variance reduction techniques.
+
+ --------------- Syllabus --------------- 
+• 2个midterms和1个final。考题是多选题或者是非题.
+• 11个Homework. 有bonus questions
+• 作业晚交的话: 10% * 晚的天数，但是不能晚超过3天
+• Project可以从几个several theory中选择，可以in small groups.
+ 
+ --------------- Grading Breakdown --------------- 
+• Homework 10%
+• Project 10%
+• Midterm Exam 1 25%
+• Midterm Exam 2 25%
+• Final Exam 30%
+• Bonus Opportunities 2.5%
+TOTAL 102.5%
+
+ --------------- Exam Policy --------------- 
+• 考试1,2,3分别可以用1,2,3张cheatsheet，A4纸双面，手写或者打印
+• 还能拿一个空白的scratch paper. 考试有监考，需要给镜头展示双面。
+• 还能拿reasonable calculator.
+• 不能用任何软件比如Excel, Arena, R
+
+  ---------------  Communication --------------- 
+• Piazza discussion forums
+Netiquette
+
+ --------------- 参考书籍 --------------- 
+• Law, A. M., Simulation Modeling and Analysis, 5th edition, McGraw-Hill Education, New York, 2015. [This textbook is most for the “theory” aspects of the course.]
+• Kelton, W. D., Zupick, N. B., and Ivey, N., Simulation with Arena, 7th edition, McGraw-Hill,New York, 2024. [This book covers the Arena simulation language.]
+• If you want to review probability and statistics, you can get a free pdf version of the book A First Course in Probability and Statistics. You can also buy an el cheapo
+softbound version. We’ve heard that this makes the perfect Independence Day gift! Just click on the book!
+
+ --------------- Technology/Software Requirements --------------- 
+• R statistical software (free download; see cran.r-project.org)
+• Arena simulation software
+  - 免费下载网址： https://www.rockwellautomation.com/en-us/products/software/arena-simulation/buying-options/download.html
+  - 需要在网页底部注册，然后他们会发下载Link到你email: “Student” option on the “Job Type” menu
+• Adobe Acrobat PDF reader (free download; see https://get.adobe.com/reader/)
+
+ --------------- Due Dates --------------- 
+都是美东时间
+Homework 1 F May 24 at 11:59 p.m.
+Homework 2 F May 31 at 11:59 p.m.
+Homework 3 F June 7 at 11:59 p.m.
+Homework 4 F June 14 at 11:59 p.m.
+Homework 5 F June 21 at 11:59 p.m.
+Homework 6 F June 28 at 11:59 p.m.
+Homework 7 F July 5 at 11:59 p.m.
+Homework 8 F July 12 at 11:59 p.m.
+Homework 9 F July 19 at 11:59 p.m.
+Homework 10 F July 26 at 11:59 p.m.                            
+                            
+Project Topic and group selection due F June 7 at 11:59 p.m.
+Project Progress Report DUE F June 28 at 11:59 p.m.
+Project Final Report Due DUE M July 22 at 11:59 p.m.
+Exam 1: June 7 at 8:00 a.m. – Tu June 18 at 11:59 p.m. 
+Exam 2：July 5 at 8:00 a.m. – Su July 14 at 11:59 p.m.
+Exam 3: July 24 at 8:00 a.m. – Th Aug 1 at 11:59 p.m.
+                            
+Midterm Exam 1 Midterm Exam 1 [Covers everything up to and including Lesson 9 of Module 5 from Week 4. See Topics Attachment.]
+Midterm Exam 2 Midterm Exam 2 [Covers everything up to and including Lesson 13 of Module 7 from Week 8, with emphasis on more-recent stuff. See Topics Attachment.]
+Final Exam Final Exam [Covers everything, with emphasis on more-recent stuff. See Topics Attachment below. ] 
+                            
