@@ -1,0 +1,18 @@
+https://www2.isye.gatech.edu/~sman/courses/6739/
+
+Textbook: A First Course in Probability and Statistics
+
+Free pdf download!
+
+Course Notes:
+
+Module 0: Introduction + Bootcamps (updated 7/31/20)
+Module 1: Probability Basics (updated 11/22/20)
+Module 2: Random Variables (updated 9/15/20)
+Module 3: Bivariate Random Variables (updated 3/2/20)
+Module 4: Distributions + Central Limit Theorem (updated 8/5/20)
+Module 5: Statistics Basics + Estimation (updated 7/12/20)
+Module 6: Confidence Intervals (updated 11/22/20)
+Module 7: Hypothesis Testing (updated 3/2/20)
+Module 8: Regression (very old, very rough draft)
+Quantile Tables: Normal, t,  χ2, F
