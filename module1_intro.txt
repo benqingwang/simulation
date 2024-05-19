@@ -1,11 +1,49 @@
-1. 我们为什么要用simulation?
+1. 什么是simulation?
 simulation是solve model的一个方法。所以我们先看什么是model: model is a high-level representation of the operation of a real-world process. 那么solve model有3种方法：
 - analytical methods: 就是通过解方程那种方式解决的.比如我从山上扔一个石头出去，我想知道它的落点，这个可以用物理公式计算出来。这种就是analytical methods。
 - numerical methods: 不是closed-form的，比如预测天气，可能要用很多微积分，这种是numerical.
 - simulation method: 如果这个过程有randomness，那么上面2种可能就都不好使，那么我们可以用similation. 
 
+所以simulation的定义是: the imitation of a real-world process or system over time. 它包含: 
+- generation of an artificial history 
+- to draw inferences 
+- concerning the operating characteristics of the real system that is represented.
+所以这里关键字是inferences，simulation的结果是一个inferences。
+
 2. 本课关注的model类型
 - Discrete (vs. continuous)
 – Stochastic (vs. deterministic)
 – Dynamic (vs. static)
+
+3. simulation的应用
+- Describe / analyze real or conceptual system behavior.
+- Ask “what if” questions.
+- Aid in system design and optimization.
+- Can simulate almost anything.
+    Customer-based systems likeManufacturing Processes, Supply Chains, Health Systems.
+    Systems with no “customers”, e.g., stock option prices.
+
+通过simulation，
+- 我们可以知道系统能不能完成任务? 
+- 如果现在的系统不能完成任务，什么要调整？
+- 我们还可以通过simulation得到具体的action plan
+- 解决问题：比如有bottleneck，通过simulation来看怎么解决
+- 解决dispute: 比如2个人有2个不同的意见，我们可以通过simulation来分析优劣
+- sell an idea: simulation比较直观有说服性。
+
+4. 优缺点：
+优点: 
+ - 可以用来研究哪些用analytical / numerical treatment解决不了的复杂问题
+ - 研究那些analytical or numerical treatment可能忽略的细节关系
+ - 作为系统experimental studies的基础
+ - 可以同来check其他方法的results and give credibility.
+ - 减少design blunders （严重错误).
+ - 很好的demo method.
+ - (有的时候) 非常简单
+
+缺点:
+ - (有的时候) 不简单
+ - (有的时候) 很费事很昂贵
+ - Simulations产生“random” output，所以可能会misinterpretation of results
+ - 对有的问题有比simulation更好的方法
 
