@@ -47,3 +47,32 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
  - Simulations产生“random” output，所以可能会misinterpretation of results
  - 对有的问题有比simulation更好的方法
 
+5. Simulation的历史
+【1】据老师说，最早例子是1777 – Buffon’s Needle Problem – a new spin on things。Suppose we have a floor made of parallel strips of wood, each the same width, and we drop a needle onto the floor. What is the probability that the needle will lie across a line between two strips?
+【2】Early 1900’s – Beer and Student’s t distribution：用英国监狱犯人的index finger长度做的simulation
+【3】1946 – Ulam, Metropolis, von Neumann, and the H-Bomb 氢弹研究
+【4】1960’s – Industrial Applications （–Manufacturing – Queueing Models）
+【5】Development of Simulation Languages
+    – Easy-to-use modeling tools
+    – Graphics
+【6】Rigorous Theoretical Work
+    – Computational algorithms
+    – Probabilistic and statistical methods
+
+制造业是simulation的一个origin
+Simulation is the technique of choice
+• Calculates movement of parts and interaction of system components.
+• Evaluates part flow thru the system.
+• Examines conflicting demand for resources.
+• Studies contemplated changes before their introduction.
+• Prevents design blunders.
+
+通常会问的问题包括
+• What will be the throughput? Throughput就是类似于output就是指你系统能让多少人或者东西through
+• How can we change it?
+• Where are the bottlenecks?
+• Which is the best design?
+• What is the reliability of the system?
+• What is the impact of breakdowns? 如果系统完蛋了，后果是啥
+
+
