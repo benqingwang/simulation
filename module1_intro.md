@@ -10,12 +10,12 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
 - concerning the operating characteristics of the real system that is represented.
 所以这里关键字是inferences，simulation的结果是一个inferences。
 
-2. 本课关注的model类型
+<h2>本课关注的model类型</h2>
 - Discrete (vs. continuous)
 – Stochastic (vs. deterministic)
 – Dynamic (vs. static)
 
-3. simulation的应用
+<h2>simulation的应用</h2>
 - Describe / analyze real or conceptual system behavior.
 - Ask “what if” questions.
 - Aid in system design and optimization.
@@ -31,8 +31,8 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
 - 解决dispute: 比如2个人有2个不同的意见，我们可以通过simulation来分析优劣
 - sell an idea: simulation比较直观有说服性。
 
-4. 优缺点：
-优点: 
+<h2>simulation的优缺点</h2>
+<h3>优点</h3>
  - 可以用来研究哪些用analytical / numerical treatment解决不了的复杂问题
  - 研究那些analytical or numerical treatment可能忽略的细节关系
  - 作为系统experimental studies的基础
@@ -40,14 +40,14 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
  - 减少design blunders （严重错误).
  - 很好的demo method.
  - (有的时候) 非常简单
-
-缺点:
+ 
+<h3>缺点</h3>
  - (有的时候) 不简单
  - (有的时候) 很费事很昂贵
  - Simulations产生“random” output，所以可能会misinterpretation of results
  - 对有的问题有比simulation更好的方法
 
-5. Simulation的历史
+<h2>Simulation的历史</h2>
 【1】据老师说，最早例子是1777 – Buffon’s Needle Problem – a new spin on things。Suppose we have a floor made of parallel strips of wood, each the same width, and we drop a needle onto the floor. What is the probability that the needle will lie across a line between two strips?
 【2】Early 1900’s – Beer and Student’s t distribution：用英国监狱犯人的index finger长度做的simulation
 【3】1946 – Ulam, Metropolis, von Neumann, and the H-Bomb 氢弹研究
@@ -75,7 +75,8 @@ Simulation is the technique of choice
 • What is the reliability of the system?
 • What is the impact of breakdowns? 如果系统完蛋了，后果是啥
 
-6. Actual Applications
+<h2>Simulation的Actual Applications</h2>
+<h3>制造业和supply chain的</h3>
 Manufacturing (Automobile Production Facility, Carpet Production Facility) 
 Queueing Problems (Call Center Analysis, Fast Food Drive-Thru, Fast Food Drive-Thru Call Center, Airport Security Line)
 
@@ -83,7 +84,7 @@ Queueing Problems (Call Center Analysis, Fast Food Drive-Thru, Fast Food Drive-T
 – Use simulation to determine how much value-added a forecasting application provides.
 – Use simulation to analyze howSC randomness or model errors affect a proposed solution. Is it robust? What’s the best solution?
 
-更多Applications
+<h3>更多Applications</h3>
 • Inventory and Supply Chain Analysis
 • Financial Analysis
 • Portfolio Analysis
@@ -102,15 +103,20 @@ Health Systems的simulation
 • Propagation of Disease Spread
 • Humanitarian Logistics
 
-Surveilance Application
+<h3>Surveilance Application</h3>
 • Use simulation to monitor certain time series.
 • Predict issues as or before they happen.
-•
-Is a disease in the process ofbecoming an outbreak?
-•
-When is something out of theordinary occurring?
-•
-Take advantage of HUGE data sets.
+• Is a disease in the process ofbecoming an outbreak?
+• When is something out of theordinary occurring?
+• Take advantage of HUGE data sets.
 
-</body>
-</html>
+Dr. Harold Shipman的例子
+这个坏人通过篡改遗嘱然后给他的病人heroin overdoses来杀死她们夺财。他篡改记录来显示这些病人需要吗啡，但是软件记录这些修改。
+我们这里的目的是讲什么是surveilance application：Surveillance用sequential hypothesis tests。
+- Null hypH0 is “no disease” (“no murder”).
+- The test statistics有非常难的分布，即使是under H0.
+- 使用simulation可以近似null hypothesis的概率分布
+- 如果sampling casts doubt on this distribution, then reject.
+
+
+
