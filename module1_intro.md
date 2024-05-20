@@ -1,4 +1,4 @@
-<h2>什么是simulation?</h2>
+<h2>1. 什么是simulation?</h2>
 simulation是solve model的一个方法。所以我们先看什么是model: model is a high-level representation of the operation of a real-world process. 那么solve model有3种方法：
 - analytical methods: 就是通过解方程那种方式解决的.比如我从山上扔一个石头出去，我想知道它的落点，这个可以用物理公式计算出来。这种就是analytical methods。
 - numerical methods: 不是closed-form的，比如预测天气，可能要用很多微积分，这种是numerical.
@@ -10,12 +10,12 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
 <li>concerning the operating characteristics of the real system that is represented.</li>
 所以这里关键字是<strong>inferences</strong>，simulation的结果是一个inferences。
 
-<h2>本课关注的model类型</h2>
+<h3>本课关注的model类型</h3>
 <li>Discrete (vs. continuous)</li>
 <li>Stochastic (vs. deterministic)</li>
 <li>Dynamic (vs. static)</li>
 
-<h2>simulation的应用</h2>
+<h2>2. simulation的应用</h2>
 <li>Describe / analyze real or conceptual system behavior.</li>
 <li>Ask “what if” questions.</li>
 <li>Aid in system design and optimization.</li>
@@ -31,7 +31,7 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
 <li>解决dispute: 比如2个人有2个不同的意见，我们可以通过simulation来分析优劣</li>
 <li>sell an idea: simulation比较直观有说服性。</li>
 
-<h2>simulation的优缺点</h2>
+<h2> 3. simulation的优缺点</h2>
 <h3>优点</h3>
  <li>可以用来研究哪些用analytical / numerical treatment解决不了的复杂问题</li>
  <li>研究那些analytical or numerical treatment可能忽略的细节关系</li>
@@ -47,7 +47,7 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
  <li>Simulations产生“random” output，所以可能会misinterpretation of results</li>
  <li>对有的问题有比simulation更好的方法</li>
 
-<h2>Simulation的历史</h2>
+<h2>4. Simulation的历史</h2>
 【1】据老师说，最早例子是1777 – Buffon’s Needle Problem – a new spin on things。Suppose we have a floor made of parallel strips of wood, each the same width, and we drop a needle onto the floor. What is the probability that the needle will lie across a line between two strips?
 【2】Early 1900’s – Beer and Student’s t distribution：用英国监狱犯人的index finger长度做的simulation
 【3】1946 – Ulam, Metropolis, von Neumann, and the H-Bomb 氢弹研究
@@ -75,7 +75,7 @@ Simulation is the technique of choice
 <li>What is the reliability of the system?</li>
 <li>What is the impact of breakdowns? 如果系统完蛋了，后果是啥</li>
 
-<h2>Simulation的Actual Applications</h2>
+<h2>5. Simulation的Actual Applications</h2>
 <h3>制造业和supply chain的</h3>
 Manufacturing (Automobile Production Facility, Carpet Production Facility) 
 Queueing Problems (Call Center Analysis, Fast Food Drive-Thru, Fast Food Drive-Thru Call Center, Airport Security Line)
@@ -94,7 +94,7 @@ Queueing Problems (Call Center Analysis, Fast Food Drive-Thru, Fast Food Drive-T
 <li>Service Sector</li>
 <li>Health Systems</li>
 
-Health Systems的simulation
+<h3>Health Systems的simulation</h3>
 <li>Patient Flow in a Hospital</li>
 <li>Hospital Room Allocation</li>
 <li>Optimization of Doctor / Nurse Scheduling</li>
@@ -118,5 +118,18 @@ Dr. Harold Shipman的例子
 <li>使用simulation可以近似null hypothesis的概率分布</li>
 <li>如果sampling casts doubt on this distribution, then reject.</li>
 
+<h2>6. Baby Example</h2>
+<h3>用simulation来回答问题: 至少要多少个人参加一个party才能保证至少50%的概率能有2个人同一天生日</h3>
+这个问题我可以用P(至少2个人同一天生日)= 1 - P(没有任何人同一天生日)>=50%来解
+转化为 P(没有任何人同一天生日)<=0.5，即P_365^n/(365^n)<=0.5，可以解出n>=23
+老师用simulation来做，结果的平均值是23。
+    
+<h3>用simulation来估计pi的值</h3>
+这个simulation解法是弄一个1*1的正方形，然后做一个内切圆。这样圆的面积就是pi*(0.5)^2 = pi/4. 
+现在我们往正方形里面随机扔点点，根据概率，扔进圆圈的概率是圆的面积除以正方形的面积也就是 pi/4
+所以我们拿这个概率乘以4，就可以估计pi的值。老师展示的例子很有趣，我们simulate的次数多的时候反而离真实值远一点。
 
-
+<h3>用simulation来估计f(x)=sin(pi*x)的在[0,1]上的积分</h3>
+<li>这个simulation的方法是Sample n个长方形。</li>
+<li>每个长方形的宽度是1/n，位置是random选在的[0,1]之间的数x，高度就是sin(pi*x)。这样我们可以计算这个长方形的面积。</li>
+<li>现在把n个长方形的面积加在一起得到一个total,这个total就是估计的积分值。当n很大时，这个估计的积分值就很接近理论值</li>
