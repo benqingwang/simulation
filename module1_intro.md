@@ -5,10 +5,10 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
 - simulation method: 如果这个过程有randomness，那么上面2种可能就都不好使，那么我们可以用similation. 
 
 所以simulation的定义是: the imitation of a real-world process or system over time. 它包含: 
-- generation of an artificial history 
-- to draw inferences 
-- concerning the operating characteristics of the real system that is represented.
-所以这里关键字是inferences，simulation的结果是一个inferences。
+<li>generation of an artificial history </li>
+<li>to draw inferences </li>
+<li>concerning the operating characteristics of the real system that is represented.</li>
+所以这里关键字是<strong>inferences</strong>，simulation的结果是一个inferences。
 
 <h2>本课关注的model类型</h2>
 - Discrete (vs. continuous)
