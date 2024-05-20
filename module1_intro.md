@@ -16,36 +16,36 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
 <li>Dynamic (vs. static)</li>
 
 <h2>simulation的应用</h2>
-- Describe / analyze real or conceptual system behavior.
-- Ask “what if” questions.
-- Aid in system design and optimization.
-- Can simulate almost anything.
-    Customer-based systems likeManufacturing Processes, Supply Chains, Health Systems.
-    Systems with no “customers”, e.g., stock option prices.
+<li>Describe / analyze real or conceptual system behavior.</li>
+<li>Ask “what if” questions.</li>
+<li>Aid in system design and optimization.</li>
+<li>Can simulate almost anything.</li>
+    <li>Customer-based systems likeManufacturing Processes, Supply Chains, Health Systems.</li>
+    <li>Systems with no “customers”, e.g., stock option prices.</li>
 
 通过simulation，
-- 我们可以知道系统能不能完成任务? 
-- 如果现在的系统不能完成任务，什么要调整？
-- 我们还可以通过simulation得到具体的action plan
-- 解决问题：比如有bottleneck，通过simulation来看怎么解决
-- 解决dispute: 比如2个人有2个不同的意见，我们可以通过simulation来分析优劣
-- sell an idea: simulation比较直观有说服性。
+<li>我们可以知道系统能不能完成任务? </li>
+<li>如果现在的系统不能完成任务，什么要调整？</li>
+<li>我们还可以通过simulation得到具体的action plan</li>
+<li>解决问题：比如有bottleneck，通过simulation来看怎么解决</li>
+<li>解决dispute: 比如2个人有2个不同的意见，我们可以通过simulation来分析优劣</li>
+<li>sell an idea: simulation比较直观有说服性。</li>
 
 <h2>simulation的优缺点</h2>
 <h3>优点</h3>
- - 可以用来研究哪些用analytical / numerical treatment解决不了的复杂问题
- - 研究那些analytical or numerical treatment可能忽略的细节关系
- - 作为系统experimental studies的基础
- - 可以同来check其他方法的results and give credibility.
- - 减少design blunders （严重错误).
- - 很好的demo method.
- - (有的时候) 非常简单
+ <li>可以用来研究哪些用analytical / numerical treatment解决不了的复杂问题</li>
+ <li>研究那些analytical or numerical treatment可能忽略的细节关系</li>
+ <li>作为系统experimental studies的基础</li>
+ <li>可以同来check其他方法的results and give credibility.</li>
+ <li>减少design blunders （严重错误).</li>
+ <li>很好的demo method.</li>
+ <li>(有的时候) 非常简单</li>
  
 <h3>缺点</h3>
- - (有的时候) 不简单
- - (有的时候) 很费事很昂贵
- - Simulations产生“random” output，所以可能会misinterpretation of results
- - 对有的问题有比simulation更好的方法
+ <li>(有的时候) 不简单</li>
+ <li>(有的时候) 很费事很昂贵</li>
+ <li>Simulations产生“random” output，所以可能会misinterpretation of results</li>
+ <li>对有的问题有比simulation更好的方法</li>
 
 <h2>Simulation的历史</h2>
 【1】据老师说，最早例子是1777 – Buffon’s Needle Problem – a new spin on things。Suppose we have a floor made of parallel strips of wood, each the same width, and we drop a needle onto the floor. What is the probability that the needle will lie across a line between two strips?
@@ -61,19 +61,19 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
 
 制造业是simulation的一个origin
 Simulation is the technique of choice
-• Calculates movement of parts and interaction of system components.
-• Evaluates part flow thru the system.
-• Examines conflicting demand for resources.
-• Studies contemplated changes before their introduction.
-• Prevents design blunders.
+<li>Calculates movement of parts and interaction of system components.</li>
+<li>Evaluates part flow thru the system.</li>
+<li>Examines conflicting demand for resources.</li>
+<li>Studies contemplated changes before their introduction.</li>
+<li>Prevents design blunders.
 
 通常会问的问题包括
-• What will be the throughput? Throughput就是类似于output就是指你系统能让多少人或者东西through
-• How can we change it?
-• Where are the bottlenecks?
-• Which is the best design?
-• What is the reliability of the system?
-• What is the impact of breakdowns? 如果系统完蛋了，后果是啥
+<li>What will be the throughput? Throughput就是类似于output就是指你系统能让多少人或者东西through</li>
+<li>How can we change it?</li>
+<li>Where are the bottlenecks?</li>
+<li>Which is the best design?</li>
+<li>What is the reliability of the system?</li>
+<li>What is the impact of breakdowns? 如果系统完蛋了，后果是啥</li>
 
 <h2>Simulation的Actual Applications</h2>
 <h3>制造业和supply chain的</h3>
@@ -81,34 +81,34 @@ Manufacturing (Automobile Production Facility, Carpet Production Facility)
 Queueing Problems (Call Center Analysis, Fast Food Drive-Thru, Fast Food Drive-Thru Call Center, Airport Security Line)
 
 现在许多supply chain工具都有simulationcapability.
-– Use simulation to determine how much value-added a forecasting application provides.
-– Use simulation to analyze howSC randomness or model errors affect a proposed solution. Is it robust? What’s the best solution?
+<li>Use simulation to determine how much value-added a forecasting application provides.
+<li>Use simulation to analyze howSC randomness or model errors affect a proposed solution. Is it robust? What’s the best solution?
 
 <h3>更多Applications</h3>
-• Inventory and Supply Chain Analysis
-• Financial Analysis
-• Portfolio Analysis
-• Options Pricing
-• Traffic Simulation
-• Airspace Simulation
-• Service Sector
-• Health Systems
+<li>Inventory and Supply Chain Analysis</li>
+<li>Financial Analysis</li>
+<li>Portfolio Analysis</li>
+<li>Options Pricing</li>
+<li>Traffic Simulation</li>
+<li>Airspace Simulation</li>
+<li>Service Sector</li>
+<li>Health Systems</li>
 
 Health Systems的simulation
-• Patient Flow in a Hospital
-• Hospital Room Allocation
-• Optimization of Doctor / Nurse Scheduling
-• Procurement of Supplies
-• Disease Surveillance
-• Propagation of Disease Spread
-• Humanitarian Logistics
+<li>Patient Flow in a Hospital</li>
+<li>Hospital Room Allocation</li>
+<li>Optimization of Doctor / Nurse Scheduling</li>
+<li>Procurement of Supplies</li>
+<li>Disease Surveillance</li>
+<li>Propagation of Disease Spread</li>
+<li>Humanitarian Logistics</li>
 
 <h3>Surveilance Application</h3>
-• Use simulation to monitor certain time series.
-• Predict issues as or before they happen.
-• Is a disease in the process ofbecoming an outbreak?
-• When is something out of theordinary occurring?
-• Take advantage of HUGE data sets.
+• Use simulation to monitor certain time series.</li>
+• Predict issues as or before they happen.</li>
+• Is a disease in the process ofbecoming an outbreak?</li>
+• When is something out of theordinary occurring?</li>
+• Take advantage of HUGE data sets.</li>
 
 Dr. Harold Shipman的例子
 这个坏人通过篡改遗嘱然后给他的病人heroin overdoses来杀死她们夺财。他篡改记录来显示这些病人需要吗啡，但是软件记录这些修改。
