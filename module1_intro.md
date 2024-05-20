@@ -149,12 +149,41 @@ Take a normal step up or down every time unit and plot where you are as time pro
 Einstein 和 Black+Scholes won Nobel Prizes for this research.
 
 <h2>7. Randomness</h2>
-我们平时说的random number其实通常都是deterministic的方法产生的。有很多种方法，老师这里说的是Linear Congruential Generator
-步骤就是–
+<h3>怎么产生PNR</h3>
+我们平时说的random number其实通常都是deterministic的方法产生的，所以不是真正的random，是pseudo-random number (PRN)。有很多种方法，老师这里说的是Linear Congruential Generator
+步骤就是:
 <ol>
-<li>Choose an integer “seed,” X(0),就是我们平时要specify的random seed</li>
+<li>选一个我们常说的random seed，是个正整数</li>
+<li>计算第一个PRN (pseudo数: X(i) = a*X(i-1) mod(m) 这个意思是把seed乘以a然后求除以m的余数。这里a和m一般都是很大的常数质数。mod读作modulus</li>
+<li>后面的依次产生更多PRN。当然这些都是余数肯定是整数，所以我们要除以m得到一个0，1之间的数: U(i) = X(i)/m</li>   
 </ol>
-    –
-Set X(i) = a X(i-1) mod(m), where a and m are carefully chosenconstants, and mod is the modulus function
-–
-Set the ith PRN as U(i) = X(i)/m
+
+<p>老师给了一个简单的Pretend Example:</p>
+Start with X(0) = 4 (for no reason) – Set X(i) = 5 X(i-1) mod(7) 
+Then X(1) = 20 mod 7 = 6
+X(2) = 2, X(3) = 3, X(4) = 1, X(5) = 5, etc.
+So U(1) = X(1)/m = 6/7
+U(2) = 2/7, U(3) = 3/7, etc.
+
+<p>老师给了一个Real Example</p>
+• X(i) = 16807 X(i-1) mod(2^31 -1)
+• U(i) =X(i) /m
+这个generator被应用于很多simulation languages，它有很多优点，比如long “cycle times”，但是也有更好的generators are out there
+
+<h3>怎么产生其他Other RV’s</h3>
+<ol>
+<li>首先我们得到一个0，1之间的PNR： U(i) ~ Unif(0,1)</li>
+<li>Apply some appropriate transformation：这是如何generate一个服从exponetial distribution的PRN: -(1/λ) ln(U(i)) ~ Exp(λ) </li>
+<li>这叫做Inverse transform method，可以用于其他important distributions</li>   
+<li> 还有其他更sophisticated的方法比如Box-Muller method for normals</li>
+</ol>
+
+<h2>8. Simulation Output Analysis</h2>
+<p>既然simulation的input是随机的，那output就是也是random，因此output需要careful analysis。注意simulation output既不是independent也不是normal，所以我们需要用新的方法.
+用快餐店的客户等待时间为例子，它不是normally distributed，通常是skewed；也不是identically distributed，通常correlated，而且patterns change during the day，所以我们不能用usual stat来分析。</p>
+
+<p>我们有2个general cases： 一个是Terminating Simulations一个是Steady-State Simulations</p>
+<ol>
+<li>Terminating Simulations适用于我们想了解short-term behavior, 比如想了解一天之内客户的平均等待时间，一场pandemic里平均的感染人数。通常通过indepdent replciation来分析。每次replication的condition都是一样的，然后sample means from each replication可以被认为是iid,然后我们就可以用我们学的baby stat来分析</li>
+<li>Steady-State Simulations适用于我们想了解long-term behavior，比如Long-running assembly line。我们需要明白一点，我们的initialization是有bias的，所以这个方法是要先<blue>“warm up”</blue> simulationbefore collecting data。Many methods for dealing with steady-state data（Batch Means， Overlapping Batch Means /Spectral Analysis， Standardized Time Series， Regeneration）。这里面batch mean的方法是【1】Make one long run (vs. many shorter reps)【2】Warm up simulation before collecting data【3】Chop remaining observations into contiguous batches【4】Sample means from each batch are approximately i.i.d. normal【5】Use classical statistics on the i.i.d. batch means</li>
+</ol>
