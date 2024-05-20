@@ -11,9 +11,9 @@ simulation是solve model的一个方法。所以我们先看什么是model: mode
 所以这里关键字是<strong>inferences</strong>，simulation的结果是一个inferences。
 
 <h2>本课关注的model类型</h2>
- - Discrete (vs. continuous)
- - Stochastic (vs. deterministic)
- - Dynamic (vs. static)
+- Discrete (vs. continuous)
+- Stochastic (vs. deterministic)
+- Dynamic (vs. static)
 
 <h2>simulation的应用</h2>
 - Describe / analyze real or conceptual system behavior.
