@@ -133,3 +133,19 @@ Dr. Harold Shipman的例子
 <li>这个simulation的方法是Sample n个长方形。</li>
 <li>每个长方形的宽度是1/n，位置是random选在的[0,1]之间的数x，高度就是sin(pi*x)。这样我们可以计算这个长方形的面积。</li>
 <li>现在把n个长方形的面积加在一起得到一个total,这个total就是估计的积分值。当n很大时，这个估计的积分值就很接近理论值</li>
+
+<h3>Good and Bad generator</h3>
+这个例子展示了如果一个random generator不好的话，可能会什么样，老师的例子是个可爱多花心筒的样子
+
+<h3>wendys 排队问题</h3>
+这个例子是假设快餐店只有一个点餐台的简单情况，顾客的到来，服务的时间都是随机变量，我们可以simulate等待时间和queue长度，server utilization等等指标
+
+<h3>股市simulation</h3>
+假设t0有一定本钱，有一个portfolio里面有不同行业的return的平均值和方差，simulate 5年后我的钱
+
+<h3>Random Walk</h3>
+Take a normal step up or down every time unit and plot where you are as time progresses.
+此 “random walk” converges to Brownian motion.
+Einstein 和 Black+Scholes won Nobel Prizes for this research.
+
+
