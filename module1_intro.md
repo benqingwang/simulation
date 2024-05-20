@@ -118,7 +118,7 @@ Dr. Harold Shipman的例子
 <li>使用simulation可以近似null hypothesis的概率分布</li>
 <li>如果sampling casts doubt on this distribution, then reject.</li>
 
-<h2>6. Baby Example</h2>
+<h2>6. Baby Examples</h2>
 <h3>用simulation来回答问题: 至少要多少个人参加一个party才能保证至少50%的概率能有2个人同一天生日</h3>
 这个问题我可以用P(至少2个人同一天生日)= 1 - P(没有任何人同一天生日)>=50%来解
 转化为 P(没有任何人同一天生日)<=0.5，即P_365^n/(365^n)<=0.5，可以解出n>=23
