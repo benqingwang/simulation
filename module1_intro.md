@@ -104,19 +104,19 @@ Health Systems的simulation
 <li>Humanitarian Logistics</li>
 
 <h3>Surveilance Application</h3>
-• Use simulation to monitor certain time series.</li>
-• Predict issues as or before they happen.</li>
-• Is a disease in the process ofbecoming an outbreak?</li>
-• When is something out of theordinary occurring?</li>
-• Take advantage of HUGE data sets.</li>
+<li>Use simulation to monitor certain time series.</li>
+<li>Predict issues as or before they happen.</li>
+<li>Is a disease in the process ofbecoming an outbreak?</li>
+<li>When is something out of theordinary occurring?</li>
+<li>Take advantage of HUGE data sets.</li>
 
 Dr. Harold Shipman的例子
 这个坏人通过篡改遗嘱然后给他的病人heroin overdoses来杀死她们夺财。他篡改记录来显示这些病人需要吗啡，但是软件记录这些修改。
 我们这里的目的是讲什么是surveilance application：Surveillance用sequential hypothesis tests。
-- Null hypH0 is “no disease” (“no murder”).
-- The test statistics有非常难的分布，即使是under H0.
-- 使用simulation可以近似null hypothesis的概率分布
-- 如果sampling casts doubt on this distribution, then reject.
+<li>Null hypH0 is “no disease” (“no murder”).</li>
+<li>The test statistics有非常难的分布，即使是under H0.</li>
+<li>使用simulation可以近似null hypothesis的概率分布</li>
+<li>如果sampling casts doubt on this distribution, then reject.</li>
 
 
 
