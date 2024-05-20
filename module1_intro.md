@@ -148,4 +148,13 @@ Take a normal step up or down every time unit and plot where you are as time pro
 此 “random walk” converges to Brownian motion.
 Einstein 和 Black+Scholes won Nobel Prizes for this research.
 
-
+<h2>7. Randomness</h2>
+我们平时说的random number其实通常都是deterministic的方法产生的。有很多种方法，老师这里说的是Linear Congruential Generator
+步骤就是–
+<nl>
+<li>Choose an integer “seed,” X(0),就是我们平时要specify的random seed</li>
+</nl>
+    –
+Set X(i) = a X(i-1) mod(m), where a and m are carefully chosenconstants, and mod is the modulus function
+–
+Set the ith PRN as U(i) = X(i)/m
