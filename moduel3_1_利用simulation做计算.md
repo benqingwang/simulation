@@ -45,3 +45,35 @@ $$
   <li>$f(0.10) = f(0)(1 + 2 * 0.01)^{10} =  10.19$</li>
 </ul>
 所以可见我们的approximation在i很小的情况下，效果不错的。
+
+<h2>Section 2: 利用simulation求积分</h2>
+为什么要这么做呢？因为有的积分很难手动解出来。用simulation的方法求面积得到积分结果是很棒的。比如你手动试验一下这个: 
+
+$$
+\int_{0}^{1} ln(x)ln(1-x) \ dx
+$$
+
+老师这里用了一个简单例子来说明过程。
+
+$$
+比如我们要求 \sin(\pi x)在（0，1）上的积分。这里我们用了简单的例子，range本来就是(0,1)
+$$ 
+
+$$
+I = \int_{0}^{1} \sin(\pi x) \ dx
+$$ 
+
+如果我直接用积分计算是这样的
+
+$$
+I = \int_{0}^{1} \sin(\pi x) \ dx = -\frac{1}{\pi} (cos(\pi)x)\vert_{1}^{0} = -\frac{1}{\pi} (-1-(1))=\frac{2}{\pi} \approx 0.6366
+$$ 
+
+如果我用上面的方法就是可以抽n个随机的(0,1)之间的数，带入$sin(\pi x)$，然后计算平均值。
+![image](https://github.com/benqingwang/simulation/assets/158376214/b9f89b85-2076-40ef-bf04-212542ef905e)
+可见当我们的sample比较多之后，这个值稳定在6.3左右，和我用积分得到的结果一样。
+
+我下面用老师给的4个数来展示具体的计算estimate和confidence interval的过程
+![image](https://github.com/benqingwang/simulation/assets/158376214/70de848e-0455-4ffb-a647-821550414801)
+
+
