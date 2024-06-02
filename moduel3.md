@@ -1,15 +1,12 @@
 <h2>Introduction</h2>
-<h3> 例子背景 </h3>：
+<h3> 例子背景 </h3>
 <ul>
 <li>我们不知道具体 $f(x)$ 是什么，但是知道 $f'(x)$ </li>
 <li>我们知道某一个点 $f(x)$ 的具体值，比如 $f(0)$ ，如何来估计小的变化，诸如 $f(0.01)$ , $f(0.02)$ 等？</li>
 </ul>
 
 <h3>需要用的原理</h3>
-导数是当x变化无限小的时候，y的变化除以x的变化：
-$$
-\frac{d}{dx} f(x) \equiv f'(x) \equiv \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
-$$
+导数是当x变化无限小的时候，y的变化除以x的变化: $\frac{d}{dx} f(x) \equiv f'(x) \equiv \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$ 
 
 也可以写成
 
