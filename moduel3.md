@@ -7,9 +7,7 @@
 
 <h3>需要用的原理</h3>
 导数是当x变化无限小的时候，y的变化除以x的变化: 
-$$
-\frac{d}{dx} f(x) \equiv f'(x) \equiv \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
-$$
+$\frac{d}{dx} f(x) \equiv f'(x) \equiv \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
 
 也可以写成 $f'(x) \approx \frac{f(x+h) - f(x)}{h}$ , 
 
