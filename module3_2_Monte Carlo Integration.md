@@ -50,7 +50,8 @@ $$
 可见当我们的sample比较多之后，这个值稳定在6.3左右，和我用积分得到的结果一样。
 
 我下面用老师给的4个数来展示具体的计算estimate和confidence interval的过程
-![image](https://github.com/benqingwang/simulation/assets/158376214/5c52c48c-9e06-4593-ad37-41693f58f1fc)
+![image](https://github.com/benqingwang/simulation/assets/158376214/70de848e-0455-4ffb-a647-821550414801)
+
 
 
 
