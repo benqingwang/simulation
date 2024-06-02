@@ -42,5 +42,5 @@ $$
 如果我直接用积分计算是这样的
 
 $$
-I = \int_{0}^{1} \sin(\pi x) \ dx = 1/\pi (cos(\pi)x)\vert_{1}^{0}
+I = \int_{0}^{1} \sin(\pi x) \ dx = \frac{1}{\pi} (cos(\pi)x)\vert_{1}^{0}
 $$ 
