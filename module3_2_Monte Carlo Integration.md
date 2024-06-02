@@ -10,7 +10,7 @@
 因此有: 
 
 $$
-I = \int_{a}^{b} g(x) \ dx = \int_{0}^{1} g((b-a)U+a) \ d((b-a)U+a) = (b-a) \int_{0}^{1} g\left(a + (b-a)u\right) \ du
+I = \int_{a}^{b} g(x) \ dx = \int_{0}^{1} g((b-a)u+a) \ d((b-a)u+a) = (b-a) \int_{0}^{1} g\left(a + (b-a)u\right) \ du
 $$
 
 <h2>如果积分是在(a,b)上，我们可以通过换元变为在(0,1)上</h2>
