@@ -52,7 +52,8 @@ $$
 我下面用老师给的4个数来展示具体的计算estimate和confidence interval的过程
 ![image](https://github.com/benqingwang/simulation/assets/158376214/70de848e-0455-4ffb-a647-821550414801)
 
-
+你可能想说这么算的优势何在，积分更准确更快。老师给了一个新的例子：$\int_{0}^{1} ln(x)ln(1-x) \ dx$
+这种积分对于很多人就很难直接积出来，那么用simulation的方法就很棒
 
 
 
