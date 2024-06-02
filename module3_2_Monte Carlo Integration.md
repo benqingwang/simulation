@@ -17,6 +17,7 @@ $$
 \bar{I}_n
 $$ 
 
+$\bar{I}_n$
 
 <h2>创建一个estimator来估计(0,1)上的积分</h2>
 我们现在创建一个estimator $\bar{I}_n$ ，这个符号含义就是用n个observation来估计I的estimator
