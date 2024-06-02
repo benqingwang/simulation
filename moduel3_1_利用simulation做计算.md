@@ -4,7 +4,7 @@
 <ol>
   <li>利用derivative估计函数值</li>
   <li>利用simulation计算复杂的积分问题</li>
-  <li>利用simulation计算$/pi$值</li>
+  <li>利用simulation计算 $\pi$ 值</li>
 </ol>
 
 
