@@ -12,7 +12,7 @@ $$
 \frac{d}{dx} f(x) \equiv f'(x) \equiv \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
 $$ 
 
-也可以写成 $f'(x) \approx \frac{f(x+h) - f(x)}{h}$ , 和 $f(x+h) \approx f(x) + h f'(x)$ 
+也可以写成 $f'(x) \approx \frac{f(x+h) - f(x)}{h}$ , 或者  $f(x+h) \approx f(x) + h f'(x)$ 
 
 <h3>实际例子</h3>
 <ul>
