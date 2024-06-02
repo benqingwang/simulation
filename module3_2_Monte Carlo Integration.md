@@ -15,7 +15,7 @@ $$
 
 <h2>创建一个estimator来估计(0,1)上的积分</h2>
 我们现在创建一个estimator $\bar{I}_n$ , 这个符号含义就是用n个observation来估计I的estimator
-就是抽n个(0,1)上的随机数，然后带入公式 $g\left(a + (b-a)u\right)$ 然后得出一个值，把n个结果平均就是我们的估计。
+就是抽n个(0,1)上的随机数，然后带入公式 $g\left(a+(b-a)u\right)$ 然后得出一个值，把n个结果平均就是我们的估计。
 
 $$
 \bar{I}_n \equiv \frac{1}{n} \sum_{i=1}^{n} I_i = \frac{b - a}{n} \sum_{i=1}^{n} g(a + (b - a) U_i)
