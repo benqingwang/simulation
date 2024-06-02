@@ -61,4 +61,4 @@ $$
   <li>$f(0.10) = 10e^{0.20} = 12.21$</li>
 </ul>
 
-<p style="color: red;">可见我们的approximation在i很小的情况下，效果不错的。</p>
+<red>可见我们的approximation在i很小的情况下，效果不错的。</red>
