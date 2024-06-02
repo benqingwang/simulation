@@ -25,5 +25,8 @@ $$
 老师的解释是：根据Law of Large Numbers, 如果一个estimator能够渐近地无偏并且variance goes to zero，上面的方法就是可行的。那么怎么证明mean是无偏并且variance goes to zero呢？
 ![image](https://github.com/benqingwang/simulation/assets/158376214/7dff586d-72ae-4071-a8f9-ee72e01b924a)
 
+<h2>进一步求confidence interval</h2>
+简单说就是confidence interval就是estimator的mean加减z value乘以estimator的标准样本方差
+![image](https://github.com/benqingwang/simulation/assets/158376214/443cb6e5-ee5d-47de-8218-2d42675b8a63)
 
 
