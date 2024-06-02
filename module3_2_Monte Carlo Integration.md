@@ -27,6 +27,6 @@ $$
 
 <h2>进一步求confidence interval</h2>
 简单说就是confidence interval就是estimator的mean加减z value乘以estimator的标准样本方差
-![image](https://github.com/benqingwang/simulation/assets/158376214/443cb6e5-ee5d-47de-8218-2d42675b8a63)
+![image](https://github.com/benqingwang/simulation/assets/158376214/8f6a42a2-07af-41de-833a-0572d9aa47f2)
 
 
