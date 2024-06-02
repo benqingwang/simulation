@@ -69,6 +69,18 @@ $$
 I = \int_{0}^{1} \sin(\pi x) \ dx = -\frac{1}{\pi} (cos(\pi)x)\vert_{1}^{0} = -\frac{1}{\pi} (-1-(1))=\frac{2}{\pi} \approx 0.6366
 $$ 
 
+用simulation的方法是这样: 
+[1] 我们用
+
+$$
+\bar{I}_ n \equiv \frac{1}{n} \sum_{i=1}^{n} I_i = \frac{1}{n} \sum_{i=1}^{n} sin(\pi x)
+$$
+
+
+
+
+
+
 如果我用上面的方法就是可以抽n个随机的(0,1)之间的数，带入$sin(\pi x)$，然后计算平均值。
 ![image](https://github.com/benqingwang/simulation/assets/158376214/b9f89b85-2076-40ef-bf04-212542ef905e)
 可见当我们的sample比较多之后，这个值稳定在6.3左右，和我用积分得到的结果一样。
