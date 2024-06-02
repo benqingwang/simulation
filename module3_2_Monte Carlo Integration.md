@@ -45,4 +45,10 @@ $$
 I = \int_{0}^{1} \sin(\pi x) \ dx = -\frac{1}{\pi} (cos(\pi)x)\vert_{1}^{0} = -\frac{1}{\pi} (-1-(1))=\frac{2}{\pi} \approx 0.6366
 $$ 
 
+如果我用上面的方法就是可以抽100个随机的(0,1)之间的数，带入$sin(\pi x)$，然后计算平均值。
+![image](https://github.com/benqingwang/simulation/assets/158376214/5070491e-615e-4a1c-9e09-2a64e61ffe90)
+
+
+
+
 
