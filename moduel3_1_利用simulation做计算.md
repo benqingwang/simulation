@@ -7,8 +7,7 @@
   <li>利用simulation计算 $\pi$ 值</li>
 </ol>
 
-
-<h2>Introduction</h2>
+<h2>Section 1: 利用derivative估计函数值</h2>
 <h3> 例子背景 </h3>
 <ul>
 <li>一个函数 $f(x)=10\cdot e^{2x}$ ， 但是现在这个信息被隐藏了，我们不知道具体 $f(x)$ 是什么，但是知道 $f'(x)=2f(x)$ </li>
@@ -62,4 +61,4 @@ $$
   <li>$f(0.10) = 10e^{0.20} = 12.21$</li>
 </ul>
 
-<storng>可见我们的approximation在i很小的情况下，效果不错的。</storng>
+<p style="color: red;">可见我们的approximation在i很小的情况下，效果不错的。</p>
