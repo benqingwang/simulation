@@ -50,7 +50,7 @@
   <li> 单位货物的售价是d</li>
   <li> $I_{i}$ 第i天营业结束的时候的存货量</li>
   <li> $Z_{i}$ 第i天营业结束的进行订货的量，货物的单位成本是c, 订一次货的固定费用是K，或者总支出是 K + c*订货量  </li>
-  <li> 营业结束后订货的量服从一个规则: 如果营业结束时存货还剩3以下的话就必须订货，否则必须不订 </li>
+  <li> 营业结束后订货的量服从一个规则: 如果营业结束时存货还剩s以下的话就必须订货，否则必须不订 </li>
   <li> 假设这些新货会立刻送到，因此hold这些存货overnight的单位成本是h</li>
   <li> 如果营业期间客户来了但是你的货没有了，客户会生气的走开，每个缺货的量的造成penalty的损失是p </li>
   <li> 这里面唯一的随即量是每天的客户需求货量 $D_{i}$ </li>
@@ -61,8 +61,8 @@
 <ul>
   <li> Total = Sales - Ordering Cost - Holding Cost - Penalty Cost</li>
   <li> $Sales = d * 销量 = d * min (Di, I_{i-1}+ Z_{i-1})$ </li>
-  <li> 如果 $I_{i-1}+ Z_{i-1}<3$ ， $Ordering Cost = K + c*订货量 $ ， 否则 $Ordering Cost =0$ </li>
-  
+  <li> 如果 $I_{i-1}<s, Ordering Cost = K + c*订货量 ， 否则 Ordering Cost =0$ </li>
+  <li> Holding Cost 
   
 
 $$
