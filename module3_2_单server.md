@@ -65,7 +65,7 @@
   <li> $当天晚上Holding Cost = $I_{i} * h $
   <li> $当天白天Penalty Cost = $p * max(D_{i} - I_{i-1} - Z_{i-1}, 0)$
 
-<h3>simulation</h3>
+<h3>simulation实战</h3>
 <ul>
   <li> 假设第一天开始的时候存货为 $I_{0} + Z_{0} =10$ </li>
   <li> 系统参数为: d=10, s=3, S=10, K=2, c=4, h=1, p=2 </li>
