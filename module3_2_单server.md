@@ -61,7 +61,7 @@
 <ul>
   <li> Total = 当天白天Sales - 当天晚上Ordering Cost - 当天晚上Holding Cost - 当天白天Penalty Cost</li>
   <li> $当天白天Sales = d * 当天销量 = d * min （当天需求， 当天营业开始的存货量) = d * min (D_{i}, I_{i-1}+ Z_{i-1})$ </li>
-  <li> 如果 $I_{i}小于s, 当天晚上Ordering Cost = K + c*订货量 ， 否则 Ordering Cost =0 </li>
+  <li> 如果 $I_{i}$小于s, 当天晚上 $Ordering Cost = K + c*Z_{i}$ ， 否则 Ordering Cost =0 </li>
   <li> $当天晚上Holding Cost = $I_{i} * h $
   <li> $当天白天Penalty Cost = $p * max(D_{i} - I_{i-1} - Z_{i-1}, 0)$
   
