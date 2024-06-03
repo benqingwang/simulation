@@ -45,7 +45,7 @@
   ![image](https://github.com/benqingwang/simulation/assets/158376214/bf260ba0-078f-45ba-90dd-7c8a0082e611)
 
 <h2>存货管理系统的例子</h2>
-背景
+<h3>商店存货的背景</h3>
 <ul>
   <li> 单位货物的售价是d</li>
   <li> $I_{i}$ 第i天营业结束的时候的存货量</li>
@@ -57,47 +57,15 @@
   <li> 我们要回答的问题是，这个商店在第i天挣了多少 </li>
 </ul>
 
-现在我们计算Total Cost Calculation
+<h3>现在我们计算Total Cost Calculation</h3>
 <ul>
   <li> Total = 当天白天Sales - 当天晚上Ordering Cost - 当天晚上Holding Cost - 当天白天Penalty Cost</li>
-  <li> $Sales = d * 当天销量 = d * min （当天需求， 当天营业开始的存货量) = d * min (Di, I_{i-1}+ Z_{i-1})$ </li>
-  <li> 如果 $I_{i}小于s, Ordering Cost = K + c*订货量 ， 否则 Ordering Cost =0 </li>
-  <li> Holding Cost = $I_{i} * h $
+  <li> $当天白天Sales = d * 当天销量 = d * min （当天需求， 当天营业开始的存货量) = d * min (D_{i}, I_{i-1}+ Z_{i-1})$ </li>
+  <li> 如果 $I_{i}小于s, 当天晚上Ordering Cost = K + c*订货量 ， 否则 Ordering Cost =0 </li>
+  <li> $当天晚上Holding Cost = $I_{i} * h $
+  <li> $当天白天Penalty Cost = $p * max(D_{i} - I_{i-1} - Z_{i-1}, 0)$
   
 
-$$
-= d \min(D_i, \text{inventory at beginning of day } i)
-$$
-
-$$
-- \left\{
-    \begin{array}{ll}
-    K + cZ_i & \text{if } I_i < s \\
-    0 & \text{otherwise}
-    \end{array}
-    \right.
-$$
-
-$$
-- hI_i - p \max(0, D_i - \text{inventory at beginning of day } i)
-$$
-
-$$
-= d \min(D_i, I_{i-1} + Z_{i-1})
-$$
-
-$$
-- \left\{
-    \begin{array}{ll}
-    K + cZ_i & \text{if } I_i < s \\
-    0 & \text{otherwise}
-    \end{array}
-    \right.
-$$
-
-$$
-- hI_i - p \max(0, D_i - (I_{i-1} + Z_{i-1})).
-$$
 
   
   
