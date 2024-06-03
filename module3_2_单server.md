@@ -1,6 +1,7 @@
 <h1>A Single-Server Queue</h1>
 
-One single server queue问题有下面的假设
+<h2>Single_Server Queue的基础 - 计算平均系统内时间和平均人数</h2>
+<h3>One single server queue问题有下面的假设</h3>
 <ul>
   <li>客户的 arrival interval是iid (independnetly and identically distributed)</li>
   <li>客户的 service time也是 iid</li>
@@ -17,7 +18,7 @@ One single server queue问题有下面的假设
   <li> $S_{i}$ 是第i个顾客被served的时长</li>
   <li> $D_{i}$ 是第i个顾客离开的时间, 是他开始被served加上service时长: $D_{i} = T_{i} + S_{i}$  </li>
 
-我们有2个任务:
+<h3>我们有2个任务:</h3>
 <ul>
   <li> 求顾客(例子里有6个顾客)的平均等待时间 $\sum_{i=1}^{6} \frac{W_i Q_i}{6}$
   <li> 求系统中平均有多少人(in line + in service) </li>
@@ -43,7 +44,59 @@ One single server queue问题有下面的假设
 
   ![image](https://github.com/benqingwang/simulation/assets/158376214/bf260ba0-078f-45ba-90dd-7c8a0082e611)
 
+<h2>存货管理系统的例子</h2>
+背景
+<ul>
+  <li> $I_{i}$ 第i天营业结束的时候的存货量</li>
+  <li> $Z_{i}$ 第i天营业结束的进行订货的量，货物的单位成本是c </li>
+  <li> 营业结束后订货的量服从一个规则: ，货物的单位成本是c </li>
+  <li> 假设这些新货会立刻送到，因此hold这些存货overnight的单位成本是h</li>
+  <li> 如果营业期间客户来了但是你的货没有了，客户会生气的走开，每个缺货的量的造成penalty的损失是p </li>
+  <li> 这里面唯一的随即量是每天的客户需求货量 $D_{i}$ </li>
+  <li> 我们要回答的问题是，这个商店在第i天挣了多少 </li>
+</ul>
 
+# Total Cost Calculation
+
+The total cost is given by:
+
+$$
+\text{Total} = \text{Sales} - \text{Ordering Cost} - \text{Holding Cost} - \text{Penalty Cost}
+$$
+
+$$
+= d \min(D_i, \text{inventory at beginning of day } i)
+$$
+
+$$
+- \left\{
+    \begin{array}{ll}
+    K + cZ_i & \text{if } I_i < s \\
+    0 & \text{otherwise}
+    \end{array}
+    \right.
+$$
+
+$$
+- hI_i - p \max(0, D_i - \text{inventory at beginning of day } i)
+$$
+
+$$
+= d \min(D_i, I_{i-1} + Z_{i-1})
+$$
+
+$$
+- \left\{
+    \begin{array}{ll}
+    K + cZ_i & \text{if } I_i < s \\
+    0 & \text{otherwise}
+    \end{array}
+    \right.
+$$
+
+$$
+- hI_i - p \max(0, D_i - (I_{i-1} + Z_{i-1})).
+$$
 
   
   
