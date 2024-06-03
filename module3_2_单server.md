@@ -56,7 +56,7 @@
   <li> 我们要回答的问题是，这个商店在第i天挣了多少 </li>
 </ul>
 
-# Total Cost Calculation
+现在我们计算Total Cost Calculation
 
 The total cost is given by:
 
