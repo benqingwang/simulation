@@ -48,7 +48,7 @@
 背景
 <ul>
   <li> $I_{i}$ 第i天营业结束的时候的存货量</li>
-  <li> $Z_{i}$ 第i天营业结束的进行订货的量，货物的单位成本是c </li>
+  <li> $Z_{i}$ 第i天营业结束的进行订货的量，货物的单位成本是c, 货物的售价是d </li>
   <li> 营业结束后订货的量服从一个规则: ，货物的单位成本是c </li>
   <li> 假设这些新货会立刻送到，因此hold这些存货overnight的单位成本是h</li>
   <li> 如果营业期间客户来了但是你的货没有了，客户会生气的走开，每个缺货的量的造成penalty的损失是p </li>
@@ -57,12 +57,9 @@
 </ul>
 
 现在我们计算Total Cost Calculation
-
-The total cost is given by:
-
-$$
-\text{Total} = \text{Sales} - \text{Ordering Cost} - \text{Holding Cost} - \text{Penalty Cost}
-$$
+<ul>
+  <li> Total = Sales - Ordering Cost - Holding Cost - Penalty Cost</li>
+  <li> $Sales = d * 销量 = d * min (Di, I_{i-1}+ Z_{i-1})$ </li>
 
 $$
 = d \min(D_i, \text{inventory at beginning of day } i)
