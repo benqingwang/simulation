@@ -17,7 +17,18 @@ One single server queue问题有下面的假设
   <li> $S_{i}$ 是第i个顾客被served的时长</li>
   <li> $D_{i}$ 是第i个顾客离开的时间, 是他开始被served加上service时长: $D_{i} = T_{i} + S_{i}$  </li>
 
-  
+我们有2个任务:
+<ul>
+  <li> 求顾客(例子里有6个顾客)的平均等待时间 $\sum_{i=1}^{6} \frac{W_i Q_i}{6}$
+  <li> 求系统中平均有多少人(in line + in service) </li>
+</ul>
+
+下面我们来看怎么用simulation来计算
+<ul>
+  <li> 顾客的平均时间$\sum_{i=1}^{6} \frac{W_i Q_i}{6}$可以就把所有人的各个步骤的时间写出来，然后计算平均值</li>
+![image](https://github.com/benqingwang/simulation/assets/158376214/50f51635-7f8a-421e-a3e3-4f979cf80f9a)
+
+
   
   
   
