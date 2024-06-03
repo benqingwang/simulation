@@ -99,3 +99,15 @@ $$
 \bar{I}_ n \equiv \frac{1}{n} \sum_{i=1}^{n} I_i = \frac{b - a}{n} \sum_{i=1}^{n} g(a + (b - a) U_i)
 $$
 
+<h2>利用simulation计算 $\pi$ 值</h2>
+我们在Module1学过用扔针头的方法来估计 $\pi$ 的值，实际种我们不能扔针，simulation的过程如下:
+<ul>
+  <li>产生2个(0,1)之间的随机数U1, U2，它们都服从Uniformed distribution</li>
+  <li>如果U1, U2满足下面不等式，就说明这个随机试验得到一个圆内部的点</li>
+$$
+\left( U_1 - \frac{1}{2} \right)^2 + \left( U_2 - \frac{1}{2} \right)^2 \leq \frac{1}{4}.
+$$
+  <li>然后我们把圆内的点数和所有点数进行对比，得到一个比例。我们知道圆和它相切的正方形是: $\pi*r^2$ </li>
+  
+</ul>
+
