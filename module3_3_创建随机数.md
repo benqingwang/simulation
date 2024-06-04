@@ -6,11 +6,12 @@
   <li>体会一下，这个方法是和上面简单的例子一样的。就是用随机的(0,1)来simulate CDF(Cumulative Distribution Function )，倒推回X值。这个方法就是叫做inverse transform method. $F(X) = U$ 因此 $X = F^{-1}(U)$ </li>
 </ul>
 
-<h2>用inverse transform method创建discrete随机数</h2>
+<h2>用inverse transform method创建连续随机数</h2>
 <ul>
   <li>首先看一个theorem: 如果X是一个连续的随机变量并且cdf是F(x)。那么 $F(X)~U(0,1)$ . 这个theorem说明什么呢？ 说明如果我们能求出cdf的反函数，$X = F^{-1}(U)$ ,我们就可以把一个(0,1)之间的随机数扔进这个反函数，然后得到simulated X </li>
   <li>总结：第一步得到CDF $F(X)$ , 第二步求CDF反函数 $X = F^{-1}(U)$, 第三步带入一个(0,1)随机数 </li>
   <li>看一个例子，我有一个指数函数 $X \sim e^{\lambda}$ ，我们先找到它的CDF: $F(x) = 1 - e^{-\lambda x}$ for x>0. 令 $F(x) = 1 - e^{-\lambda x} = U$ , 解出: $X = \frac{-1}{\lambda} \ln(1 - U)$ .这个时候我扔进去一个(0,1)随机数U，得到X就是服从指数分布的随机连续变量</li>
+  <li>如何用Excel做inverse transform: $NORM . INV (RAND () ,\mu , \sigma )$ </li>
 </ul>
 
 <h2>如何产生(0,1)随机数</h2>
@@ -24,6 +25,9 @@
       </ol>
   </li>
   <li> Fortran implementation: This Fortran code is an implementation of a linear congruential generator, which is a method of generating pseudo-random numbers. 我不重复了，就是老师module 3 slide 50</li>
+
+<h2>如何产生(0,1)随机数</h2>
   
-  
+<h2>应用随机数的例子: Stock simulation</h2>  
+
 
