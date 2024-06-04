@@ -16,26 +16,22 @@
 </ol>
 
 <h2>Simulation Study的重要概念</h2>
+
 <h3>system</h3>
-<p>A system is **a** collection of entities (people, machines, etc.) that interact together to accomplish a goal.</p>
+<p>A system 是 a collection of entities (比如people, machines等等) that interact together to accomplish a goal.</p>
 
 <h3>model</h3>
-A model is an abstract representation
-of a system, usually containing math /
-logical relationships describing the
-system in terms of states, entities,
-sets, events, etc. (terms that we’ll
-define below).
+A model is an abstract representation of a system, usually containing math logical relationships describing the system in terms of states, entities, sets, events, etc. 
+
 <h3>system state</h3>
-System state: A set of variables that
-contains enough information to
-describe the system. Think of the state
-as a “snapshot” of the system.
-E.g., in a single-server queue, all you
-might need to describe the state are:
-LQ(t) = # of people in queue at time t
-B(t) = 1 [0] if server is busy [idle] at
-time t.
+System state: A set of variables that contains enough information to describe the system. 也就是a “snapshot” of the system. 比如在一个single-server queue, 我们可以用等待的人数和server是不是在工作描述state: 
+<ul>
+  <li>LQ(t) = # of people in queue at time t</li>
+  <li>B(t) = 1 [0] if server is busy [idle] at time t.</li>
+</ul>
+
+
+
 <h3>entities</h3>
 Entities can be permanent (like a
 machine) or temporary (e.g.,
