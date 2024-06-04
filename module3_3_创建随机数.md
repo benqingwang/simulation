@@ -10,12 +10,6 @@
 <ul>
   <li>首先看一个theorem: 如果X是一个连续的随机变量并且cdf是F(x)。那么 $F(X)~U(0,1)$ . 这个theorem说明什么呢？ 说明如果我们能求出cdf的反函数，$X = F^{-1}(U)$ ,我们就可以把一个(0,1)之间的随机数扔进这个反函数，然后得到simulated X </li>
   <li>总结：第一步得到CDF $F(X)$ , 第二步求CDF反函数 $X = F^{-1}(U)$, 第三步带入一个(0,1)随机数 </li>
-  <li>看一个例子，我有一个指数函数 $X \sim e^{\lambda}$ </li>
+  <li>看一个例子，我有一个指数函数 $X \sim e^{\lambda}$ ，我们先找到它的CDF: $F(x) = 1 - e^{-\lambda x}$ for x>0. 令 $F(x) = 1 - e^{-\lambda x} = U$ , 解出: X = \frac{-1}{\lambda} \ln(1 - U) .这个时候我扔进去一个(0,1)随机数U，得到X就是服从指数分布的随机连续变量</li>
   
-Suppose \( X \sim \text{Exp}(\lambda) \). Then \( F(x) = 1 - e^{-\lambda x} \) for \( x > 0 \).
 
-Set \( F(X) = 1 - e^{-\lambda X} = U \). Solve for \( X \),
-
-\[ 
-X = \frac{-1}{\lambda} \ln(1 - U) \sim \text{Exp}(\lambda). \quad \square 
-\]
