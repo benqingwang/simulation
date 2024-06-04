@@ -25,9 +25,10 @@
       </ol>
   </li>
   <li> Fortran implementation: This Fortran code is an implementation of a linear congruential generator, which is a method of generating pseudo-random numbers. 我不重复了，就是老师module 3 slide 50</li>
-
-<h2>如何产生(0,1)随机数</h2>
   
 <h2>应用随机数的例子: Stock simulation</h2>  
-
+我们假设每年的股票的新价值是服从下面的公式
+$$
+Previous Value \times \max [ 0, \N(\mu_i, \sigma_i^2) \times N(1, (0.2)^2) ]
+$$
 
