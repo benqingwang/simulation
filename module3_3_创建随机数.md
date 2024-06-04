@@ -28,7 +28,9 @@
   
 <h2>应用随机数的例子: Stock simulation</h2>  
 我们假设每年的股票的新价值是服从下面的公式
+
 $$
-Previous Value \times \max [ 0, \N(\mu_i, \sigma_i^2) \times N(1, (0.2)^2) ]
+Previous Value \times \max [ 0, N(\mu_i, \sigma_i^2) \times N(1, (0.2)^2) ]
 $$
+
 
