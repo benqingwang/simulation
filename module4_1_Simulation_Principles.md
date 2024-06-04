@@ -17,13 +17,69 @@
 
 <h2>Simulation Study的重要概念</h2>
 <h3>system</h3>
-<h3>model</h3>
-<h3>system state</h3>
-<h3>entities</h3>
-<h3>list</h3>
-<h3>activities</h3>
-<h3>conditional wait</h3>
+A system is __a collection of entities__ (people, machines, etc.) that interact together to accomplish a goal.
 
+<h3>model</h3>
+A model is an abstract representation
+of a system, usually containing math /
+logical relationships describing the
+system in terms of states, entities,
+sets, events, etc. (terms that we’ll
+define below).
+<h3>system state</h3>
+System state: A set of variables that
+contains enough information to
+describe the system. Think of the state
+as a “snapshot” of the system.
+E.g., in a single-server queue, all you
+might need to describe the state are:
+LQ(t) = # of people in queue at time t
+B(t) = 1 [0] if server is busy [idle] at
+time t.
+<h3>entities</h3>
+Entities can be permanent (like a
+machine) or temporary (e.g.,
+customers), and can have various
+properties or attributes (e.g., priority of
+a customer or average speed of a
+server).
+<h3>list</h3>
+A list (or queue) is an ordered list of
+associated entities (for instance, a
+linked list, or a line of people).
+
+<h3>event</h3>
+An event is a point in time at which
+the system state changes (and
+which can’t be predicted with
+certainty beforehand).
+Examples: an arrival event, a
+departure event, a machine
+breakdown event.
+“Event” technically means the time
+that a thing happens, but loosely
+refers to “what” happens (an
+arrival).
+
+<h3>activities</h3>
+An activity is a duration of time of
+specified length (aka an
+unconditional wait).
+Examples include:
+• exponential customer interarrival
+times
+• constant service times
+We can explicitly generate those
+events, so they are “specified”.
+
+<h3>conditional wait</h3>
+A conditional wait is a duration of
+time of unspecified length.
+E.g., a customer waiting time — we
+don’t know that directly. In fact, we
+just know arrival and service times
+and will use those to reverseengineer
+the waiting times.
 
 
 
