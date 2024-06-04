@@ -20,10 +20,10 @@
       <ol>
         <li> 先设一个seed X0 </li>
         <li> 带入这个公式逐个产生随机整数 $X_i = 16807 X_{i-1} \mod (2^{31} - 1)$ , for i = 1, 2, ... </li>
-        <li> 最后把产生的整数带入这个公式产生(0,1) 随机数 $R_i = \frac{X_i}{2^{31} - 1}$ i=1,2,... </li>
-          
+        <li> 最后把产生的整数带入这个公式产生(0,1) 随机数 $R_i = \frac{X_i}{2^{31} - 1}$ i=1,2,... 这个肯定是个(0,1)的数，因为Xi是 $2^{31}$ 的余数 </li>  
       </ol>
   </li>
+  <li> Fortran implementation: This Fortran code is an implementation of a linear congruential generator, which is a method of generating pseudo-random numbers. 我不重复了，就是老师module 3 slide 50</li>
   
   
 
