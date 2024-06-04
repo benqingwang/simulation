@@ -17,7 +17,7 @@
 
 <h2>Simulation Study的重要概念</h2>
 <h3>system</h3>
-A system is **a collection of entities** (people, machines, etc.) that interact together to accomplish a goal.
+A system is **a collection of entities (people, machines, etc.) that interact together to accomplish a goal.
 
 <h3>model</h3>
 A model is an abstract representation
