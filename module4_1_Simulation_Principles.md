@@ -12,13 +12,29 @@
   <li>Run Experiments: 运行Production, often substantial. 可能需要大量时间</li>
   <li>Output Analysis: 统计分析，估计relevant measures of performance。通常和iterative with step 8 (Experimental Design) and step 9 (Production Runs)。Almost always need more runs</li>
   <li>Make Reports, Implement, and make management happy</li>
-  <li></li>
-  
-
 
 </ol>
 
-<h2></h2>
+<h2>Simulation Study的重要概念</h2>
+<h3>system</h3>
+<h3>model</h3>
+<h3>system state</h3>
+<h3>entities</h3>
+<h3>list</h3>
+<h3>activities</h3>
+<h3>conditional wait</h3>
+
+
+
+
+
+
+
+
+
+
+
+
 <h2></h2>
 <h2></h2>
 <h2></h2>
