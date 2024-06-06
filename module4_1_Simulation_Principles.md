@@ -2,10 +2,12 @@
 
 <h2>目录</h2>
 <ol>
-  <li> Simulation Study的步骤
-  Simulation Study的重要概念
-  Time-Advance Mechanisms
-  
+  <li> Simulation Study的步骤</li>
+  <li> Simulation Study的重要概念</li>
+  <li> Two Time-Advance Mechanisms</li>
+  <li> Two Modeling Approaches</li>
+  <li> Simulation Languages</li>
+</ol>
 
 <h2>1. Simulation Study的步骤</h2>
 <ol>
