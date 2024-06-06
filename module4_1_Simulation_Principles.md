@@ -28,6 +28,53 @@
 <li>Conditional wait: 是 a duration of time of unspecified length. 比如customer waiting time这个我们不能直接知道。事实上，我们可以通过arrival和service times来reverseengineer the waiting times. </li>
 
 
+<h2>Time-Advance Mechanisms</h2>
+<h3>基本概念</h3>
+<ul>
+  <li>simulation clock是一个变量，它的值代表了simulated time (也就是说不等于real time)。</li>
+  <li>Time-Advance Mechanisms 指的是 how does the clock move?</li>
+  <li>Always moves forward (never goes back in time). </li>
+</ul>
+
+<h3>2种time advance的机制</h3>
+• Fixed-Increment Time Advance
+• Next-Event Time Advance
+
+<h4>Fixed-Increment Time Advance</h4>
+就是信息只有在固定的时间点才有，是时间点为中心的看法。
+<ul>
+  <li>Update the state of the system at fixed times, n*h, n = 0,1,2,…, where h is chosen appropriately.</li>
+  <li>This is used in continuous-time models (e.g., differential equations) and models where data are only available at fixed times (e.g., at the end of every month).</li>
+  <li>Not emphasized in this course!</li>
+</ul>
+
+<h4> Next-Event Time Advance </h4>
+这个是以event为中心的观点。利用future event list (FEL)
+<ul>
+  <li>The clock is initialized at 0. All known future event times are determined and placed in the future events list (FEL), ordered by time.</li>
+  <li>The clock advances to the most imminent event, then to the next most imminent event, etc.</li>
+  <li>At each event, the system state and FEL are updated.</li>
+  <li>The system state can only change at event times. Nothing really happens between events.
+  <li>The simulation progresses by sequentially executing (dealing with) the most imminent event on the FEL.
+</ul>
+
+这里“dealing with”指将时钟前进至most imminent event并且update system state. 具体怎么update要看event是什么。比如对于arrival event，你要打开idle server。如果server是忙的，我们就在queque加上一个新顾客。
+这里 “updating the FEL”指每次发生一个event, the simulation可能需要update FEL event的 the chronological order: 比如加入new events, 删除events, moving event around, 啥也不做。
+这里有一个例子： 一个人到达queque之后，通常的simulation program回立刻着手next arrival time. 
+<ul>
+  <li> 如果next arrival time非常远，就把它放在FEL的最后就好 </li>
+  <li> 如果next arrival 会在另一个event之前就发生，比如说next arrival会在慢吞吞的server完成现在这个顾客之前就到来， 则next arrival要安插在FEL的内部</li>
+  <li> 如果现在进来的是一个丑家伙（老师自己）所有人都跑了，则我们的update FEL就是把FEL里面events删除了，哈哈哈</li>
+</ul>
+
+<h4>Efficient list processing (e.g., linked lists) for the FEL.</h4> 
+• Singly and doubly linked lists intelligently store the events in an array that allows the chronological order of the events to be accessed.
+• Such lists easily accommodate insertion, deletion, switching of events, etc.
+• Take a Computer Science course to learn more.
+
+老师还说要小心同时发生的event。比如一个人进来一个人出去。其实算谁先进来都可以，但是要有一个明确的rule保持一致。
+每个discrete-event simulation language都maintains a FEL。商业软件都会自己处理这些。
+
 
 
 
