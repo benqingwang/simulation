@@ -24,15 +24,15 @@
 
 <h2>2. Simulation Study的重要概念</h2>
 <ol>
-<li>system: 系统是相互作用共同实现一个目标的 a collection of entities (比如people, machines等等)</li>
-<li>model: model是对系统的抽象representation，通常含有math logical relationships描述系统的states, entities, sets, events, etc. </li>
-<li>System state: 是一组足以描述系统的variable, 也就是a “snapshot” of the system. 比如在一个single-server queue, 我们可以用等待的人数和server是不是在工作描述state</li>
-<li>Entities: Entities可以是permanent (比如machine)也可以是temporary的 (比如customers), 每个entity可以有各种properties or attributes (比如客户priority或者server的平均速度)</li>
-<li>List: A list (or queue)是一个ordered list of associated entities (比如 a linked list, or a line of people).
-<li>Event: 是一个时间点，在这点system state发生了变化。这个变化是事先不能预测的。比如，arrival event, departure event, a machine breakdown event. Event实际上是指一个事情发生的时间，但是loosely可以指发生了什么比如arrival。
-<li>Activities: 指 a duration of time of specified length (aka an unconditional wait). 比如 exponential customer interarrival times 比如 constant service times。因为我们可以explicitly generate这些events, 所以它们是“specified”.</li>
-<li>Conditional wait: 是 a duration of time of unspecified length. 比如customer waiting time这个我们不能直接知道。事实上，我们可以通过arrival和service times来reverseengineer the waiting times. </li>
-
+  <li>system: 系统是相互作用共同实现一个目标的 a collection of entities (比如people, machines等等)</li>
+  <li>model: model是对系统的抽象representation，通常含有math logical relationships描述系统的states, entities, sets, events, etc. </li>
+  <li>System state: 是一组足以描述系统的variable, 也就是a “snapshot” of the system. 比如在一个single-server queue, 我们可以用等待的人数和server是不是在工作描述state</li>
+  <li>Entities: Entities可以是permanent (比如machine)也可以是temporary的 (比如customers), 每个entity可以有各种properties or attributes (比如客户priority或者server的平均速度)</li>
+  <li>List: A list (or queue)是一个ordered list of associated entities (比如 a linked list, or a line of people).
+  <li>Event: 是一个时间点，在这点system state发生了变化。这个变化是事先不能预测的。比如，arrival event, departure event, a machine breakdown event. Event实际上是指一个事情发生的时间，但是loosely可以指发生了什么比如arrival。
+  <li>Activities: 指 a duration of time of specified length (aka an unconditional wait). 比如 exponential customer interarrival times 比如 constant service times。因为我们可以explicitly generate这些events, 所以它们是“specified”.</li>
+  <li>Conditional wait: 是 a duration of time of unspecified length. 比如customer waiting time这个我们不能直接知道。事实上，我们可以通过arrival和service times来reverseengineer the waiting times. </li>
+</ol>
 
 <h2>3.Time-Advance Mechanisms</h2>
 <h3>基本概念</h3>
