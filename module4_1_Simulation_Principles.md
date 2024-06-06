@@ -75,15 +75,32 @@
 老师还说要小心同时发生的event。比如一个人进来一个人出去。其实算谁先进来都可以，但是要有一个明确的rule保持一致。
 每个discrete-event simulation language都maintains a FEL。商业软件都会自己处理这些。
 
+老师给的例子
+![image](https://github.com/benqingwang/simulation/assets/158376214/bfc79389-7137-4fb4-9151-7529228f57ff)
 
 
+<h2>Two Modeling Approaches</h2>
+<h3>Event-Scheduling</h3>
+关注events和它们对system state的影响。它的缺点就是要keep track 所有event，然后会随着时间的推移越来越多。你可以用这个方法，if you were programming in C++ or Python from scratch.但是老师给的例子说明，这种方法coding起来是个mess，非常多的方面要update. 
 
 
+<h3>process-interaction</h3>
+如果我们用一个process-interation (PI) lanugage来处理generic model，我们只需要做: 
+<ul>
+  <li>Create customers every once in a while.</li>
+  <li>Process (serve) them, maybe after waiting in line.</li>
+  <li>Dispose of the customers after they’re done being processed.</li>
+</ul>
+这个课程就是讲PI语言。 我们需要的是关注a generic customer (entity) and 和它在这个系统里相关的the sequence of events and activities. 在任何时刻，系统可能有多名顾客，然后它们会相互作用争夺资源。用PI语言，我们就deal with generic customer而不是event bookkeeping。Event bookkeeping是simulation language本身handle的，所以老师说如果考试问Arena是什么语言要回答是PI，但是知道它们核心是event scheduling.
 
-
-
-
+PI很省事，比如 A customer is generated, eventually gets served, and then leaves就是Create – Process – Dispose.
 
 <h2></h2>
-<h2></h2>
+
+
+
+
+
+
+
 <h2></h2>
