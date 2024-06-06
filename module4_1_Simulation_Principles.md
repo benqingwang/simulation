@@ -17,65 +17,15 @@
 
 <h2>Simulation Study的重要概念</h2>
 
-<h3>system</h3>
-<p>A system 是 a collection of entities (比如people, machines等等) that interact together to accomplish a goal.</p>
-
-<h3>model</h3>
-A model is an abstract representation of a system, usually containing math logical relationships describing the system in terms of states, entities, sets, events, etc. 
-
-<h3>system state</h3>
-System state: A set of variables that contains enough information to describe the system. 也就是a “snapshot” of the system. 比如在一个single-server queue, 我们可以用等待的人数和server是不是在工作描述state: 
-<ul>
-  <li>LQ(t) = # of people in queue at time t</li>
-  <li>B(t) = 1 [0] if server is busy [idle] at time t.</li>
-</ul>
-
-
-
-<h3>entities</h3>
-Entities can be permanent (like a
-machine) or temporary (e.g.,
-customers), and can have various
-properties or attributes (e.g., priority of
-a customer or average speed of a
-server).
-<h3>list</h3>
-A list (or queue) is an ordered list of
-associated entities (for instance, a
-linked list, or a line of people).
-
-<h3>event</h3>
-An event is a point in time at which
-the system state changes (and
-which can’t be predicted with
-certainty beforehand).
-Examples: an arrival event, a
-departure event, a machine
-breakdown event.
-“Event” technically means the time
-that a thing happens, but loosely
-refers to “what” happens (an
-arrival).
-
-<h3>activities</h3>
-An activity is a duration of time of
-specified length (aka an
-unconditional wait).
-Examples include:
-• exponential customer interarrival
-times
-• constant service times
-We can explicitly generate those
-events, so they are “specified”.
-
-<h3>conditional wait</h3>
-A conditional wait is a duration of
-time of unspecified length.
-E.g., a customer waiting time — we
-don’t know that directly. In fact, we
-just know arrival and service times
-and will use those to reverseengineer
-the waiting times.
+<ol>
+<li>system: 系统是相互作用共同实现一个目标的 a collection of entities (比如people, machines等等)</li>
+<li>model: model是对系统的抽象representation，通常含有math logical relationships描述系统的states, entities, sets, events, etc. </li>
+<li>System state: 是一组足以描述系统的variable, 也就是a “snapshot” of the system. 比如在一个single-server queue, 我们可以用等待的人数和server是不是在工作描述state</li>
+<li>Entities: Entities可以是permanent (比如machine)也可以是temporary的 (比如customers), 每个entity可以有各种properties or attributes (比如客户priority或者server的平均速度)</li>
+<li>List: A list (or queue)是一个ordered list of associated entities (比如 a linked list, or a line of people).
+<li>Event: 是一个时间点，在这点system state发生了变化。这个变化是事先不能预测的。比如，arrival event, departure event, a machine breakdown event. Event实际上是指一个事情发生的时间，但是loosely可以指发生了什么比如arrival。
+<li>Activities: 指 a duration of time of specified length (aka an unconditional wait). 比如 exponential customer interarrival times 比如 constant service times。因为我们可以explicitly generate这些events, 所以它们是“specified”.</li>
+<li>Conditional wait: 是 a duration of time of unspecified length. 比如customer waiting time这个我们不能直接知道。事实上，我们可以通过arrival和service times来reverseengineer the waiting times. </li>
 
 
 
