@@ -1,5 +1,13 @@
 <h1>General Simulation Principles</h1>
-<h2>Simulation Study的步骤</h2>
+
+<h2>目录</h2>
+<ol>
+  <li> Simulation Study的步骤
+  Simulation Study的重要概念
+  Time-Advance Mechanisms
+  
+
+<h2>1. Simulation Study的步骤</h2>
 <ol>
   <li>Problem Formulation: 也就是statement of problem：比如利润太低怎么办，顾客抱怨等待时间太长怎么解决</li>
   <li>Objectives and Planning: 指具体要解决的问题：雇多少工人？buffer space to insert in the assembly line?</li>
@@ -12,11 +20,9 @@
   <li>Run Experiments: 运行Production, often substantial. 可能需要大量时间</li>
   <li>Output Analysis: 统计分析，估计relevant measures of performance。通常和iterative with step 8 (Experimental Design) and step 9 (Production Runs)。Almost always need more runs</li>
   <li>Make Reports, Implement, and make management happy</li>
-
 </ol>
 
-<h2>Simulation Study的重要概念</h2>
-
+<h2>2. Simulation Study的重要概念</h2>
 <ol>
 <li>system: 系统是相互作用共同实现一个目标的 a collection of entities (比如people, machines等等)</li>
 <li>model: model是对系统的抽象representation，通常含有math logical relationships描述系统的states, entities, sets, events, etc. </li>
@@ -28,7 +34,7 @@
 <li>Conditional wait: 是 a duration of time of unspecified length. 比如customer waiting time这个我们不能直接知道。事实上，我们可以通过arrival和service times来reverseengineer the waiting times. </li>
 
 
-<h2>Time-Advance Mechanisms</h2>
+<h2>3.Time-Advance Mechanisms</h2>
 <h3>基本概念</h3>
 <ul>
   <li>simulation clock是一个变量，它的值代表了simulated time (也就是说不等于real time)。</li>
@@ -79,7 +85,7 @@
 ![image](https://github.com/benqingwang/simulation/assets/158376214/bfc79389-7137-4fb4-9151-7529228f57ff)
 
 
-<h2>Two Modeling Approaches</h2>
+<h2>4. Two Modeling Approaches</h2>
 <h3>Event-Scheduling</h3>
 关注events和它们对system state的影响。它的缺点就是要keep track 所有event，然后会随着时间的推移越来越多。你可以用这个方法，if you were programming in C++ or Python from scratch.但是老师给的例子说明，这种方法coding起来是个mess，非常多的方面要update. 
 
@@ -95,12 +101,11 @@
 
 PI很省事，比如 A customer is generated, eventually gets served, and then leaves就是Create – Process – Dispose.
 
-<h2></h2>
+<h2>5. Simulation Languages</h2>
+大概有100多种的simulation commercial languages。按照low to high level排序 FORTRAN, SIMSCRIPT, GPSS/H, Extend, Arena, Simio, Automod, AnyLogic。学校里会用 5–10种主要的，价格从1000到10万。但是也有免费的：Java, Python都有不错的package. (比如 SimPyl)，有点learning curve但是还好。选择哪种语言的考虑: 
+• Cost considerations: $$, learning curve, programming costs, runtime costs, etc.
+• Ease of learning: documentation, syntax, flexibility
+• World view: E-S, P-I, continuous models, combination
+• Features: RV generators, stats collection, debugging aids, graphics, user community
 
-
-
-
-
-
-
-<h2></h2>
+怎么学呢？Textbooks, Conferences such as the Winter Simulation Conference, Vendor short courses (at a potentially steep cost)
