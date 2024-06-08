@@ -17,3 +17,6 @@
 
 然后我又跟着老师在process 1 添加了一个resource: Barber (delay seize release)，虽然我不知道什么意思。不过现在能在'data definition'下面的resource sheet看到Barber。运行simulation就是用右上角像录音机按键一样的Button
 
+![image](https://github.com/benqingwang/simulation/assets/158376214/12b3e818-32ed-4f30-a082-353b93f9df95)
+
+
