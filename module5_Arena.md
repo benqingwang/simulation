@@ -7,4 +7,13 @@
   <li>在Arena里面三个大步骤: Create (generate cust arrivals), Process (use the barber), Dispose (outta here)</li>
 </u>
 
-  ![image](https://github.com/benqingwang/simulation/assets/158376214/bc4d5ecd-c6bf-4eda-856f-adf6390b033f)
+![image](https://github.com/benqingwang/simulation/assets/158376214/bc4d5ecd-c6bf-4eda-856f-adf6390b033f)
+
+
+<h2>从virtual machine使用Arena</h2>
+我选择了直接用virtual machine的arena。打开arena之后在左边选择"discrete processing"就能找到flow charts的标记，根据老师说的，我建立了自己第一个simulation只有create, process, dispose。
+
+![image](https://github.com/benqingwang/simulation/assets/158376214/fa9ed3d0-d9be-413a-a08c-6c803bb5e8d9)
+
+然后我又跟着老师在process 1 添加了一个resource: Barber (delay seize release)，虽然我不知道什么意思。不过现在能在'data definition'下面的resource sheet看到Barber。运行simulation就是用右上角像录音机按键一样的Button
+
