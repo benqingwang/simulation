@@ -42,7 +42,7 @@ Decide module有好几种方法2-Way by Chance， N-Way by Chance， 2-Way by Co
 我们可以assign values to attribue，assign values to variables，assign graphics to entities。这里我们复习一下概念。<ul>
 <li>什么是attribute: 每个customer有自己的特性（比如我身高180血脂108喜欢打棒球等等）， attribute必须是数字的，当然你可以把categorical变成数字</li>
 <li>什么是variable: variable是global的，不是具体到customer的。所以你改变一个variable，所有人都受影响，比如系统里的WIP变化。</li></ul>
-我们可以通过Assign给一个客户分类，还能给它一个picture. 
+我们可以通过Assign给一个客户分类，还能给它一个picture，当然这个picture还能再entity spreadsheet改. 
 
 <h3> Internal Variables </h3>
 Arena内部的的变量，可以在make decision或者画图的时候用。老师给了很多例子。
