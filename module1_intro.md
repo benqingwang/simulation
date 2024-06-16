@@ -176,6 +176,7 @@ U(2) = 2/7, U(3) = 3/7, etc.
 
 <h3>怎么产生其他Other RV’s</h3>
 <ol>
+<li> 思路就是所有这些分布的CDF (F(X))都是服从0~1上均匀分布的。比如我想能得到服从exponential distribution的随机数F(x)=1-e^(-λx)，现在我generate一个0,1之间的Ui来代表我们抽中的CDF值，就是1-e^(-λx)=U_i。变形我们有x=(-1)/λ ln(1-U_i )所以我把得到的随机数Ui带进去就是服从指数分布的x. 
 <li>首先我们得到一个0，1之间的PNR： U(i) ~ Unif(0,1)</li>
 <li>Apply some appropriate transformation：这是如何generate一个服从exponetial distribution的PRN: -(1/λ) ln(U(i)) ~ Exp(λ) </li>
 <li>这叫做Inverse transform method，可以用于其他important distributions</li>   
