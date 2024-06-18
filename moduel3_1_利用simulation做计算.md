@@ -7,7 +7,7 @@
   <li>利用simulation计算 $\pi$ 值</li>
 </ol>
 
-<h2>Section 1: 利用derivative估计函数值</h2>
+<h2>Section 1: 利用derivative估计函数值 - Euler Estimation </h2>
 我们有一个函数 
 
 $$
